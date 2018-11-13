@@ -31,5 +31,30 @@
     <string name="home_teacher_tv_welcome">Welcome</string>
     <string name="activity_contests_tv_contests">List of contests:</string>
     <string name="activity_contests_btn_create_contest">Create contest</string>
+    <string name="add_question_write_question_valid_error">Question is not valid</string>
+    <string name="create_contest_name_valid_error">Contest Name is not valid</string>
+    <string name="create_contest_description_valid_error">Contest Description is not valid</string>
+    <string name="question_adapter_no_question_msg">No Question</string>
+    <string name="create_contest_activity_error">Result is not ok</string>
+    <string name="activity_contest_error">Result is not ok</string>
+    <string name="contest_adapter_no_name_msg">No Contest Name</string>
+    <string name="contest_adapter_no_description_msg">No Contest Description</string>
+    <string name="contests_save_instance_success_message">Contest saved</string>
+    <string name="add_question_success_message">Question saved</string>
+
+
+
+
+
+
+    <string-array name="add_question_time_values">
+        <item>10 seconds</item>
+        <item>20 seconds</item>
+        <item>30 seconds</item>
+        <item>40 seconds</item>
+        <item>50 seconds</item>
+        <item>60 seconds</item>
+        <item>90 seconds</item>
+    </string-array>
 
 </resources>
