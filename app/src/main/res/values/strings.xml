@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">dam-project</string>
+    <string name="create_profile_student_tv_welcome">Create your profile</string>
+    <string name="create_profile_student_last_name_hint">Last Name</string>
+    <string name="create_profile_student_email_hint">Email</string>
+    <string name="create_profile_student_tv_sex">Sex</string>
+
+
+    <string name="create_profile_student_tv_photo">Add a photo</string>
+    <string name="create_profile_student_iv_avatar">Your photo</string>
+    <string name="create_profile_student_first_name_hint">First Name</string>
+    <string name="create_profile_student_rb_sex_f">F</string>
+    <string name="create_profile_student_rb_sex_m">M</string>
+    <string name="profile_student_tv_hello">Hello,</string>
+    <string name="profile_student_tv_progress">Your progress</string>
+    <string name="profile_student_iv_cd_avatar">Your Avatar</string>
+    <string name="profile_student_btn_edit_profile">Edit Profile</string>
+    <string name="home_student_tv_welcome">Welcome</string>
+    <string name="home_student_btn_profile">My Profile</string>
+    <string name="home_student_btn_start_contest">Start Contest</string>
+    <string name="edit_profile_student_tv">Edit your profile</string>
+    <string name="edit_profile_first_name_hint">First Name</string>
+    <string name="edit_profile_student_last_name_hint">Last Name</string>
+    <string name="edit_profile_student_email_hint">Email</string>
+    <string name="edit_profile_student_btn_save">Save</string>
+    <string name="main_btn_home_student">Student Home</string>
+    <string name="create_profile_student_btn_save">Save</string>
+    <string name="main_btn_create_profile_student">Create profile</string>
+    <string name="main_btn_home_teacher">Teacher Home</string>
+    <string name="home_teacher_btn_contests">Contests</string>
+    <string name="home_teacher_tv_welcome">Welcome</string>
+    <string name="activity_contests_tv_contests">List of contests:</string>
+    <string name="activity_contests_btn_create_contest">Create contest</string>
+
+</resources>
