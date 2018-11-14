@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnHomeStudent;
     Button btnCreateProfileStudent;
     Button btnHomeTeacher;
+    Button btnCreateProfileTeacher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
         btnHomeTeacher = findViewById(R.id.main_btn_home_teacher);
         btnHomeTeacher.setOnClickListener(goToTeacherHome());
+
+        btnCreateProfileTeacher = findViewById(R.id.main_btn_create_profile_teacher);
+        btnCreateProfileTeacher.setOnClickListener(goToCreateProfileTeacher());
+
     }
 
     private View.OnClickListener goToStudentHome()
@@ -60,6 +65,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), HomeTeacherActivity.class);
+                startActivity(intent);
+            }
+        };
+    }
+
+    private View.OnClickListener goToCreateProfileTeacher()
+    {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), CreateProfileTeacherActivity.class);
                 startActivity(intent);
             }
         };

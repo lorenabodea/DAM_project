@@ -41,10 +41,14 @@
     <string name="contest_adapter_no_description_msg">No Contest Description</string>
     <string name="contests_save_instance_success_message">Contest saved</string>
     <string name="add_question_success_message">Question saved</string>
-
-
-
-
+    <string name="create_profile_teacher_tv_title">Create profile teacher</string>
+    <string name="create_profile_teacher_til_firstname">First Name</string>
+    <string name="create_profile_teacher_til_lastname">Last name</string>
+    <string name="create_profile_teacher_til_email">Email</string>
+    <string name="create_profile_teacer_email">Email</string>
+    <string name="create_profile_teacher_sex_male">Male</string>
+    <string name="create_profile_teacher_radiobutton_female">Female</string>
+    <string name="create_profile_teacher">Create teacher profile</string>
 
 
     <string-array name="add_question_time_values">
