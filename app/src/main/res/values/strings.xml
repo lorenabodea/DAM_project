@@ -26,5 +26,25 @@
     <string name="main_btn_home_student">Student Home</string>
     <string name="create_profile_student_btn_save">Save</string>
     <string name="main_btn_create_profile_student">Create profile</string>
+    <string name="choose_category_title">CATEGORIES</string>
+    <string name="choose_category_description">Choose categories:</string>
+    <string name="choose_answer_title">Choose your answer!</string>
+    <string name="choose_answer_temporary">Temporary question</string>
+    <string name="rate_contest">Rate your experience!</string>
+
+    <string-array name="choose_category_spn_values">
+        <item>Category 1</item>
+        <item>Category 2</item>
+        <item>Category 3</item>
+        <item>Category 4</item>
+    </string-array>
+
+    <string-array name="choose_question_values">
+        <item>Question 1</item>
+        <item>Question 2</item>
+        <item>Question 3</item>
+        <item>Question 4</item>
+        <item>Question 5</item>
+    </string-array>
 
 </resources>
