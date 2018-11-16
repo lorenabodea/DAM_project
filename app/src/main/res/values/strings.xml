@@ -31,6 +31,11 @@
     <string name="choose_answer_title">Choose your answer!</string>
     <string name="choose_answer_temporary">Temporary question</string>
     <string name="rate_contest">Rate your experience!</string>
+    <string name="login_student_title">Log-in</string>
+    <string name="login_student_signUp">Do not have an account? Sing-up now!</string>
+    <string name="login_student_user_error">Username is not correct!</string>
+    <string name="login_student_passwd_error">Password is not correct!</string>
+
 
     <string-array name="choose_category_spn_values">
         <item>Category 1</item>
