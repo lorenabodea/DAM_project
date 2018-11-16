@@ -9,6 +9,7 @@ import android.widget.Button;
 public class HomeTeacherActivity extends AppCompatActivity {
 
     Button btnContests;
+    Button btnProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,9 @@ public class HomeTeacherActivity extends AppCompatActivity {
     {
         btnContests = findViewById(R.id.home_teacher_btn_contests);
         btnContests.setOnClickListener(goToContests());
+
+        btnProfile = findViewById(R.id.home_teacher_btn_profile);
+        btnProfile.setOnClickListener(goToTeacherProfile());
 
 
     }
@@ -37,6 +41,16 @@ public class HomeTeacherActivity extends AppCompatActivity {
         };
     }
 
+    private View.OnClickListener goToTeacherProfile()
+    {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ProfileTeacherActivity.class);
+                startActivity(intent);
+            }
+        };
+    }
 
 
 }

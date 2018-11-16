@@ -49,6 +49,15 @@
     <string name="create_profile_teacher_sex_male">Male</string>
     <string name="create_profile_teacher_radiobutton_female">Female</string>
     <string name="create_profile_teacher">Create teacher profile</string>
+    <string name="edit_profile_teacher_btn_save">Save</string>
+    <string name="edit_profile_teacher_email_hint">Email</string>
+    <string name="edit_profile_teacher_last_name_hint">Last Name</string>
+    <string name="edit_profile_teacher_tv">First name</string>
+    <string name="home_btn_profile">Profile</string>
+    <string name="profile_teacher_tv_hello">Hello</string>
+    <string name="profile_teacher_tv_progress">Progress</string>
+    <string name="profile_teacher_iv_cd_avatar">Photo</string>
+    <string name="profile_teacher_btn_edit_profile">Edit</string>
 
 
     <string-array name="add_question_time_values">
