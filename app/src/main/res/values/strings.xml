@@ -59,6 +59,16 @@
     <string name="profile_teacher_iv_cd_avatar">Photo</string>
     <string name="profile_teacher_btn_edit_profile">Edit</string>
     <string name="create_profile_teacher_iv_avatar">Profile photo</string>
+    <string name="create_contest_tv_difficulty">Difficulty:</string>
+    <string name="create_contest_name">Name:</string>
+    <string name="create_contest_description">Description:</string>
+    <string name="create_contest_questions">Questions in this contest:</string>
+    <string name="create_contest_add_question">Add question</string>
+    <string name="create_contest_save_contest">Save Contest</string>
+    <string name="create_contest_tv_create">Create contest</string>
+    <string name="add_question_answer1_valid_error">Answer 1 is not valid</string>
+    <string name="add_question_answer2_valid_error">Answer 2 is not valid</string>
+    <string name="answer_3">Answer 3</string>
 
 
     <string-array name="add_question_time_values">

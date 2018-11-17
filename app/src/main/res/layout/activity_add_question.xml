@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".AddQuestionActivity">
 
     <android.support.design.widget.TextInputLayout
@@ -18,7 +19,7 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.095">
@@ -95,7 +96,7 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/add_question_til_ans2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_question_til_question"
         app:layout_constraintVertical_bias="1.0">
@@ -104,7 +105,7 @@
             android:id="@+id/add_question_tie_ans1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Answer 1" />
+            android:hint="Answer 1*" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -119,7 +120,7 @@
         android:layout_marginBottom="232dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_question_til_question"
         app:layout_constraintVertical_bias="0.992">
@@ -128,7 +129,7 @@
             android:id="@+id/add_question_tie_ans2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Answer 2" />
+            android:hint="Answer 2*" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -143,7 +144,7 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/add_question_til_ans4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_question_til_ans2"
         app:layout_constraintVertical_bias="1.0">
@@ -152,7 +153,7 @@
             android:id="@+id/add_question_tie_ans3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Answer 3" />
+            android:hint="@string/answer_3" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -166,7 +167,7 @@
         android:layout_marginBottom="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_question_til_ans2">
 

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ContestsActivity"
     android:orientation="vertical"
+    android:background="@drawable/background"
     android:weightSum="100">
 
     <LinearLayout
@@ -19,6 +20,7 @@
             android:id="@+id/activity_contests_tv_contests"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:text="@string/activity_contests_tv_contests" />
 
         <ListView

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".CreateContestActivity">
 
     <android.support.design.widget.TextInputLayout
@@ -27,7 +28,7 @@
             android:id="@+id/create_contest_tie_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name:" />
+            android:hint="@string/create_contest_name" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -51,7 +52,7 @@
             android:id="@+id/create_contest_tie_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Description:" />
+            android:hint="@string/create_contest_description" />
     </android.support.design.widget.TextInputLayout>
 
     <TextView
@@ -64,7 +65,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Create contest"
+        android:textSize="20dp"
+        android:text="@string/create_contest_tv_create"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -105,13 +107,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Difficulty:"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/create_contest_tv_difficulty"
+        app:layout_constraintBottom_toTopOf="@+id/create_contest_tv_questions_list"
         app:layout_constraintEnd_toStartOf="@+id/create_contest_sb_difficulty"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.401"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426" />
+        app:layout_constraintTop_toBottomOf="@+id/create_contest_sw_private_public"
+        app:layout_constraintVertical_bias="0.344" />
 
     <SeekBar
         android:id="@+id/create_contest_sb_difficulty"
@@ -139,7 +141,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Questions in this contest:"
+        android:text="@string/create_contest_questions"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
@@ -174,31 +176,31 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Save Contest"
+        android:text="@string/create_contest_save_contest"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintEnd_toStartOf="@+id/create_contest_btn_add_question"
+        app:layout_constraintHorizontal_bias="0.226"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.997" />
 
     <Button
         android:id="@+id/create_contest_btn_add_question"
         android:layout_width="148dp"
-        android:layout_height="35dp"
+        android:layout_height="45dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Add question"
+        android:text="@string/create_contest_add_question"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintHorizontal_bias="0.963"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.982" />
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </android.support.constraint.ConstraintLayout>

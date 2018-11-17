@@ -18,6 +18,8 @@ public class AddQuestionActivity extends AppCompatActivity {
     TextInputEditText tieWriteQuestion;
     Button btnSaveQuestion;
     Intent intent;
+    TextInputEditText tieAnswer1;
+    TextInputEditText tieAnswer2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,8 @@ public class AddQuestionActivity extends AppCompatActivity {
     private void initComponents(){
         tieWriteQuestion = findViewById(R.id.add_question_tie_question);
         spnTimeLimit = findViewById(R.id.add_question_spn_time);
+        tieAnswer1=findViewById(R.id.add_question_tie_ans1);
+        tieAnswer2=findViewById(R.id.add_question_tie_ans2);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.add_question_time_values, R.layout.support_simple_spinner_dropdown_item);
         spnTimeLimit.setAdapter(adapter);
         btnSaveQuestion = findViewById(R.id.add_question_btn_save);
@@ -63,6 +67,19 @@ public class AddQuestionActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), R.string.add_question_write_question_valid_error, Toast.LENGTH_LONG).show();
             return false;
         }
+
+        else if(tieAnswer1.getText() == null || tieAnswer1.getText().toString().trim().isEmpty()){
+            Toast.makeText(getApplicationContext(), R.string.add_question_answer1_valid_error, Toast.LENGTH_LONG).show();
+            return false;
+        }
+
+        else if(tieAnswer2.getText() == null || tieAnswer2.getText().toString().trim().isEmpty()){
+            Toast.makeText(getApplicationContext(), R.string.add_question_answer2_valid_error, Toast.LENGTH_LONG).show();
+            return false;
+        }
+
+
+
         return true;
     }
 
