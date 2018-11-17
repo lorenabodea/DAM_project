@@ -8,8 +8,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnHomeStudent;
-    Button btnCreateProfileStudent;
+    Button btnStudent;
+    Button btnTeacher;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,14 +20,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void initComponents()
     {
-        btnHomeStudent = findViewById(R.id.main_btn_home_student);
-        btnHomeStudent.setOnClickListener(goToStudentHome());
+        btnStudent = findViewById(R.id.main_btn_student);
+        btnStudent.setOnClickListener(goToLoginStudent());
 
-        btnCreateProfileStudent = findViewById(R.id.main_btn_create_profile_student);
-        btnCreateProfileStudent.setOnClickListener(goToCreateProfileStudent());
+        btnTeacher = findViewById(R.id.main_btn_teacher);
+        btnTeacher.setOnClickListener(goToLoginTeacher());
     }
 
-    private View.OnClickListener goToStudentHome()
+    private View.OnClickListener goToLoginStudent()
     {
         return new View.OnClickListener() {
             @Override
@@ -38,12 +38,12 @@ public class MainActivity extends AppCompatActivity {
         };
     }
 
-    private View.OnClickListener goToCreateProfileStudent()
+    private View.OnClickListener goToLoginTeacher()
     {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), CreateProfileStudentActivity.class);
+                Intent intent = new Intent(getApplicationContext(), LoginTeacherActivity.class);
                 startActivity(intent);
             }
         };

@@ -20,7 +20,7 @@ public class ProfileStudentActivity extends AppCompatActivity {
 
     private void initComponents()
     {
-        btnEditProfile = findViewById(R.id.profile_student_btn_edit_profile);
+        btnEditProfile = findViewById(R.id.create_profile_student_edit_profile);
         btnEditProfile.setOnClickListener(goToEditProfileStudent());
     }
 
