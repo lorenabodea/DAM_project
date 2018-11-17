@@ -4,17 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".CreateProfileTeacherActivity">
 
     <TextView
         android:id="@+id/create_profile_teacher_title"
         android:layout_width="322dp"
         android:layout_height="55dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="56dp"
         android:text="@string/create_profile_teacher_tv_title"
         android:textSize="32sp"
         android:textStyle="bold"
@@ -39,6 +38,7 @@
             android:id="@+id/cerate_profile_teacher_firstname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPersonName"
             android:hint="@string/create_profile_teacher_til_firstname" />
     </android.support.design.widget.TextInputLayout>
 
@@ -59,6 +59,7 @@
             android:id="@+id/create_profile_teacter_lastname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPersonName"
             android:hint="@string/create_profile_teacher_til_lastname" />
     </android.support.design.widget.TextInputLayout>
 
@@ -80,6 +81,7 @@
             android:id="@+id/create_profile_teacher_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textWebEmailAddress"
             android:hint="@string/create_profile_teacher_til_email" />
     </android.support.design.widget.TextInputLayout>
 
@@ -89,12 +91,13 @@
         android:layout_height="99dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.292"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/create_profile_teacher_til_email" >
+        app:layout_constraintTop_toBottomOf="@+id/create_profile_teacher_til_email">
 
         <RadioButton
             android:id="@+id/radioButton2"
@@ -110,5 +113,56 @@
             android:layout_weight="1"
             android:text="@string/create_profile_teacher_radiobutton_female" />
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/create_profile_student_tv_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/create_profile_student_tv_photo"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_profile_teacher_radiobutton" />
+
+    <ImageView
+        android:id="@+id/create_profile_student_iv_avatar"
+        android:layout_width="75dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:contentDescription="@string/create_profile_teacher_iv_avatar"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_profile_teacher_radiobutton"
+        tools:srcCompat="@tools:sample/avatars"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/create_profile_student_btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/create_profile_student_btn_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toEndOf="@+id/create_profile_student_iv_avatar" />
 
 </android.support.constraint.ConstraintLayout>

@@ -58,6 +58,7 @@
     <string name="profile_teacher_tv_progress">Progress</string>
     <string name="profile_teacher_iv_cd_avatar">Photo</string>
     <string name="profile_teacher_btn_edit_profile">Edit</string>
+    <string name="create_profile_teacher_iv_avatar">Profile photo</string>
 
 
     <string-array name="add_question_time_values">
