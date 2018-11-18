@@ -1,3 +1,70 @@
 <resources>
     <string name="app_name">dam-project</string>
+    <string name="create_profile_student_tv_welcome">Create your profile</string>
+    <string name="create_profile_student_last_name_hint">Last Name</string>
+    <string name="create_profile_student_email_hint">Email</string>
+    <string name="create_profile_student_tv_sex">Sex</string>
+
+
+    <string name="create_profile_student_tv_photo">Add a photo</string>
+    <string name="create_profile_student_iv_avatar">Your photo</string>
+    <string name="create_profile_student_first_name_hint">First Name</string>
+    <string name="create_profile_student_password_hint">Password</string>
+    <string name="create_profile_student_rb_sex_f">F</string>
+    <string name="create_profile_student_rb_sex_m">M</string>
+    <string name="create_profile_student_tv_birthday">Birthdate</string>
+    <string name="profile_student_tv_hello">Hello, @tempName</string>
+    <string name="profile_student_tv_progress">Your progress</string>
+    <string name="profile_student_iv_cd_avatar">Your Avatar</string>
+    <string name="home_student_tv_welcome">Welcome</string>
+    <string name="home_student_btn_profile">My Profile</string>
+    <string name="home_student_btn_start_contest">Start Contest</string>
+    <string name="edit_profile_student_tv">Edit your profile</string>
+    <string name="edit_profile_first_name_hint">First Name</string>
+    <string name="edit_profile_student_last_name_hint">Last Name</string>
+    <string name="edit_profile_student_email_hint">Email</string>
+    <string name="edit_profile_student_btn_save">Save</string>
+    <string name="edit_profile_student_save_message">Profile saved</string>
+    <string name="main_btn_home_student">Student Home</string>
+    <string name="create_profile_student_btn_save">Save</string>
+    <string name="main_btn_create_profile_student">Create profile</string>
+    <string name="choose_category_title">CATEGORIES</string>
+    <string name="choose_category_description">Choose categories:</string>
+    <string name="choose_answer_title">Choose your answer!</string>
+    <string name="choose_answer_temporary">Temporary question</string>
+    <string name="rate_contest">Rate your experience!</string>
+    <string name="login_student_title">Log-in</string>
+    <string name="login_student_signUp">Do not have an account? Sing-up now!</string>
+    <string name="login_student_user_error">Username is not correct!</string>
+    <string name="login_student_passwd_error">Password is not correct!</string>
+    <string name="create_profile_student_first_name_error">First Name field cannot be empty</string>
+    <string name="create_profile_student_last_name_error">Last Name field cannot be empty</string>
+    <string name="create_profile_student_email_error">Email field cannot be empty</string>
+    <string name="create_profile_student_password_error">Password field cannot be empty</string>
+    <string name="create_profile_student_password_error1">Password field must contain at least 8 characters</string>
+    <string name="main_tv">You\'re a...</string>
+    <string name="main_btn_student">Student</string>
+    <string name="main_btn_teacher">Teacher</string>
+    <string name="create_profile_student_edit_profile">Edit Profile</string>
+    <string name="login_student_username_hint">Username</string>
+    <string name="login_student_password_hint">Password</string>
+    <string name="login_student_btn_signIn">Sign-In</string>
+    <string name="login_student_btn_signUp">Sign-Up</string>
+
+
+    <string-array name="choose_category_spn_values">
+        <item>Category 1</item>
+        <item>Category 2</item>
+        <item>Category 3</item>
+        <item>Category 4</item>
+    </string-array>
+
+    <string-array name="choose_question_values">
+        <item>Question 1</item>
+        <item>Question 2</item>
+        <item>Question 3</item>
+        <item>Question 4</item>
+        <item>Question 5</item>
+    </string-array>
+
 </resources>
