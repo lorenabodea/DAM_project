@@ -21,7 +21,7 @@ public class HomeStudentActivity extends AppCompatActivity {
 
     private void initComponents()
     {
-        btnProfile = findViewById(R.id.home_student_btn_profile);
+        btnProfile = findViewById(R.id.home_teacher_btn_profile);
         btnStartContest = findViewById(R.id.home_student_btn_start_contest);
         //btnProfile.setOnClickListener(goToProfile());
         btnStartContest.setOnClickListener(startContest());
