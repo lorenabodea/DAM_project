@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.util.List;
+import java.util.Random;
 
 import ro.ase.proiect.dam_project.R;
 
@@ -37,6 +38,7 @@ public class ContestAdapter extends ArrayAdapter {
 
         TextView tvName = row.findViewById(R.id.tv_lv_contests_row_name);
         TextView tvDescription = row.findViewById(R.id.tv_lv_contests_row_description);
+        TextView tvCode = row.findViewById(R.id.tv_lv_contests_row_code);
 
         Contest contest = contests.get(position);
 
@@ -46,6 +48,11 @@ public class ContestAdapter extends ArrayAdapter {
         tvDescription.setText(contest.getDescription() != null ? contest.getDescription()
                 : context.getString(R.string.contest_adapter_no_description_msg)
         );
+
+        Random rnd = new Random();
+        int number = rnd.nextInt(999999);
+
+        tvCode.setText(String.format("%06d", number));
 
 
         return row;
