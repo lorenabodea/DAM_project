@@ -1,6 +1,7 @@
 package ro.ase.proiect.dam_project;
 
 import android.content.Intent;
+import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,8 @@ public class LoginTeacherActivity extends AppCompatActivity {
 
     Button SignInBtn;
     Button SignUpBtn;
+    TextInputEditText textUser;
+    TextInputEditText textPsswd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,8 @@ public class LoginTeacherActivity extends AppCompatActivity {
 
     private void init(){
 
+        textUser=findViewById(R.id.login_teacher_username_d);
+        textPsswd=findViewById(R.id.login_teacher_psswd_d);
         SignInBtn=findViewById(R.id.login_teacher_btn_signIn);
         SignUpBtn=findViewById(R.id.login_teacher_btn_signUp);
 
@@ -34,10 +39,11 @@ public class LoginTeacherActivity extends AppCompatActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if(validation())
+                {
                     Intent intent = new Intent(getApplicationContext(), HomeTeacherActivity.class);
                     startActivity(intent);
-
+                }
             }
         };
     }
@@ -50,6 +56,17 @@ public class LoginTeacherActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         };
+    }
+
+    private boolean validation(){
+        if( textUser.getText().toString().trim().isEmpty() || textUser.getText()==null) {
+            textUser.setError(getText(R.string.login_student_user_error));
+            return false;
+        }else if(textPsswd.getText()==null || textPsswd.getText().toString().trim().isEmpty()){
+            textPsswd.setError(getText(R.string.login_student_passwd_error));
+            return false;
+        }
+        return true;
     }
 
 
