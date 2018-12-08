@@ -4,13 +4,37 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class Contest implements Parcelable {
+    private Long id;
     private String name;
     private String description;
+    private Long code;
+    //private boolean priv;
 
+
+    public Contest(Long id, String name, String description) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+    }
 
     public Contest(String name, String description) {
         this.name = name;
         this.description = description;
+    }
+
+    public Contest(Long id, String name, String description, Long code) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.code = code;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -29,11 +53,30 @@ public class Contest implements Parcelable {
         this.description = description;
     }
 
+    public Long getCode() {
+        return code;
+    }
+
+    public void setCode(Long code) {
+        this.code = code;
+    }
+
+    //    public boolean isPriv() {
+//        return priv;
+//    }
+//
+//    public void setPriv(boolean priv) {
+//        this.priv = priv;
+//    }
+
+
     @Override
     public String toString() {
         return "Contest{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
+                ", code=" + code +
                 '}';
     }
 

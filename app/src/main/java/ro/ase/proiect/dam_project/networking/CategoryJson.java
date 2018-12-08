@@ -6,12 +6,12 @@ import java.util.List;
 public class CategoryJson implements Serializable {
 
     private List<ContestJson> softSkills;
-    private List<ContestJson> technoligies;
+    private List<ContestJson> technologies;
     private List<ContestJson> fun;
 
-    public CategoryJson(List<ContestJson> softSkills, List<ContestJson> technoligies, List<ContestJson> fun) {
+    public CategoryJson(List<ContestJson> softSkills, List<ContestJson> technologies, List<ContestJson> fun) {
         this.softSkills = softSkills;
-        this.technoligies = technoligies;
+        this.technologies = technologies;
         this.fun = fun;
     }
 
@@ -23,12 +23,12 @@ public class CategoryJson implements Serializable {
         this.softSkills = softSkills;
     }
 
-    public List<ContestJson> getTechnoligies() {
-        return technoligies;
+    public List<ContestJson> gettechnologies() {
+        return technologies;
     }
 
-    public void setTechnoligies(List<ContestJson> technoligies) {
-        this.technoligies = technoligies;
+    public void settechnologies(List<ContestJson> technologies) {
+        this.technologies = technologies;
     }
 
     public List<ContestJson> getFun() {
@@ -43,7 +43,7 @@ public class CategoryJson implements Serializable {
     public String toString() {
         return "Category{" +
                 "softSkills=" + softSkills +
-                ", technoligies=" + technoligies +
+                ", technologies=" + technologies +
                 ", fun=" + fun +
                 '}';
     }

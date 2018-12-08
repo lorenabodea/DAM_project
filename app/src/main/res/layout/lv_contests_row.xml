@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1.5"
         android:id="@+id/tv_lv_contests_row_name"
-        android:textSize="20sp"
+        android:textSize="30sp"
         android:textColor="@color/design_default_color_primary"
         android:textStyle="bold"/>
 
@@ -21,7 +21,20 @@
         android:layout_weight="0.5"
         android:textSize="20sp"
         android:id="@+id/tv_lv_contests_row_description"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
         />
+
+    <TextView
+        android:id="@+id/tv_lv_contests_row_contest_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:text="@string/tv_lv_contests_row_contest_code" />
+
+    <TextView
+        android:id="@+id/tv_lv_contests_row_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5" />
 
 </LinearLayout>

@@ -1,5 +1,7 @@
 package ro.ase.proiect.dam_project.networking;
 
+import android.util.Log;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -18,10 +20,10 @@ public class CategoryParser {
         JSONObject object = new JSONObject(json);
 
         List<ContestJson> softSkills = getContestListFromJson(object.getJSONArray("softSkills"));
-        List<ContestJson> technoligies = getContestListFromJson(object.getJSONArray("technoligies"));
+        List<ContestJson> technologies = getContestListFromJson(object.getJSONArray("technologies"));
         List<ContestJson> fun = getContestListFromJson(object.getJSONArray("fun"));
 
-        return new CategoryJson(softSkills, technoligies, fun);
+        return new CategoryJson(softSkills, technologies, fun);
     }
 
     public static ContestJson getContestFromJsonObject(JSONObject object) throws JSONException {
@@ -43,9 +45,9 @@ public class CategoryParser {
                     JSONObject arrayObject = array.getJSONObject(i);
 
                     if(arrayObject != null){
-                        String text = arrayObject.getString("text");
+                        String text = arrayObject.getString("questionName");
                         String timeLimit = arrayObject.getString("timeLimit");
-                        List<AnswerJson> answers = getAnswerListFromJsonObject(object.getJSONArray("answers"));
+                        List<AnswerJson> answers = getAnswerListFromJsonObject(arrayObject.getJSONArray("answers"));
                         questions.add(new QuestionJson(text, timeLimit, answers));
                     }
                 }

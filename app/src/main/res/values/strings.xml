@@ -74,13 +74,24 @@
     <string name="activity_contests_tv_contests">List of contests:</string>
     <string name="choose_answer_error">You must select one answer!</string>
     <string name="activity_contests_btn_categ2">Categ2</string>
-    <string name="activity_contests_btn_categ1">Categ1</string>
+    <string name="activity_contests_btn_categ1">Fun contests</string>
     <string name="activity_contests_btn_categ3">Categ3</string>
     <string name="contests_tv">Contests</string>
-    <string name="contests_btn_categ1">Categ1</string>
+    <string name="contests_btn_categ1">Fun contests</string>
     <string name="contests_btn_categ2">Categ2</string>
     <string name="contests_btn_categ3">Categ3</string>
     <string name="contests_btn_create_contest">Create Contest</string>
+    <string name="tv_lv_contests_row_contest_code">Contest Code:</string>
+    <string name="message_alert">Are you sure you want to delete this contest?</string>
+    <string name="message_alert2">Are you sure you want to delete question with title "%1$s"?</string>
+    <string name="message_alert3">Are you sure you want to delete answer "%1$s"?</string>
+    <string name="add_answer_tie_answer">Answer</string>
+    <string name="add_answer_btn_add_answer">Add answer to question</string>
+    <string name="add_question_btn_add_ans">Add answer to this question</string>
+    <string name="add_question_tv_answers">Answers in this question:</string>
+    <string name="n_btn_save">Save question</string>
+    <string name="add_question_tv_time_limit">Time Limit:</string>
+    <string name="add_question_tie_question">Write question</string>
 
 
     <string-array name="choose_category_spn_values">

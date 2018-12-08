@@ -39,33 +39,38 @@
 
         <Button
             android:id="@+id/contests_btn_categ1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/contests_btn_categ1" />
-
-        <Button
-            android:id="@+id/contests_btn_categ2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:text="@string/contests_btn_categ2" />
-
-        <Button
-            android:id="@+id/contests_btn_categ3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="173dp"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:text="@string/contests_btn_categ3" />
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="94dp"
+            android:layout_marginLeft="94dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginEnd="101dp"
+            android:layout_marginRight="101dp"
+            android:layout_marginBottom="6dp"
+            android:text="@string/contests_btn_categ1" />
 
         <Button
             android:id="@+id/contests_btn_create_contest"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/contests_btn_categ2"
+            android:layout_height="59dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
+            android:layout_marginStart="108dp"
+            android:layout_marginLeft="108dp"
             android:layout_marginTop="36dp"
-            android:layout_marginBottom="13dp"
+            android:layout_marginEnd="118dp"
+            android:layout_marginRight="118dp"
+            android:layout_marginBottom="50dp"
             android:text="@string/contests_btn_create_contest" />
     </RelativeLayout>
 

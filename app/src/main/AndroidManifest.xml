@@ -33,6 +33,7 @@
         <activity android:name=".EditProfileStudentActivity" />
         <activity android:name=".LoginStudentActivity" />
         <activity android:name=".LoginTeacherActivity"></activity>
+        <activity android:name=".AddAnswerActivity"></activity>
     </application>
 
 </manifest>
