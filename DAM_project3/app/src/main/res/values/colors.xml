@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#466f86</color>
+    <color name="colorPrimaryDark">#113653</color>
+    <color name="colorAccent">#00291d</color>
+    <color name="cardViewColor">#5a466f86</color>
+    <color name="primary_material_light">#baa9be</color>
+    <color name="primary_dark_material_light">#39273a</color>
+    <color name="accent_material_light">#a88489</color>
+    <color name="background_material_light">#b39494</color>
+    <color name="foreground_material_light">#000000</color>
+    <color name="button_gray">#C0C0C0</color>
+</resources>

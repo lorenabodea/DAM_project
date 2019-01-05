@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ro.ase.proiect.dam_project">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/ProjectTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".MainActivity"
+            android:theme="@style/ProjectTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProfileTeacherActivity" />
+        <activity android:name=".ContestsActivity" />
+        <activity android:name=".CreateContestActivity" />
+        <activity android:name=".AddQuestionActivity" />
+        <activity android:name=".CreateProfileTeacherActivity" />
+        <activity android:name=".HomeTeacherActivity" />
+        <activity android:name=".EditProfileTeacherActivity" />
+        <activity android:name=".CreateProfileStudentActivity" />
+        <activity android:name=".ChooseCategoryActivity" />
+        <activity android:name=".ChooseQuestionActivity" />
+        <activity android:name=".ChooseAnswerActivity" />
+        <activity android:name=".RateContestActivity" />
+        <activity android:name=".HomeStudentActivity" />
+        <activity android:name=".ProfileStudentActivity" />
+        <activity android:name=".EditProfileStudentActivity" />
+        <activity android:name=".LoginStudentActivity" />
+        <activity android:name=".LoginTeacherActivity" />
+        <activity android:name=".AddAnswerActivity" />
+    </application>
+
+</manifest>
